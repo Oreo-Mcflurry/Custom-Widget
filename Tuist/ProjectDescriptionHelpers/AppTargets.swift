@@ -93,7 +93,11 @@ public enum AppTargets {
                     ],
                     "CFBundleDisplayName": "\(AppConfiguration.displayName)",
                     "CFBundleShortVersionString": "\(AppConfiguration.version)",
-                    "CFBundleVersion": "\(AppConfiguration.build)"
+                    "CFBundleVersion": "\(AppConfiguration.build)",
+                    "UILaunchScreen": [
+                        "UIColorName": "LaunchScreenBackground",
+                        "UIImageName": "LaunchScreenImage"
+                    ]
                 ]
             ) : self == .widget ? .extendingDefault(
                 with: [
